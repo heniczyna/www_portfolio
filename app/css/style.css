@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  background-color: whitesmoke;
+}
+
+.hero {
+  background-color: #1c2d25;
+  height: 100vh;
+  color: white;
+  font-size: 40px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background-color: #446e5b;
+  }
+}
+
+.logo {
+  height: 60px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+    display: none;
+  }
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  ul {
+    display: none;
+    margin: 0px;
+    background-color: #446e5b;
+  }
+  ul.show {
+    display: block;
+  }
+}
+
+li {
+  margin: 0 10px;
+}
+
+.hero-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-text {
+  margin-left: 40px;
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.subtext {
+  font-size: 1rem;
+}
+
+.button {
+  width: 200px;
+  border-radius: 10px;
+  background-color: coral;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #1c2d25;
+}
+
+.button:active {
+  background-color: white;
+  color: red;
+}
+
+.hero-socials {
+  margin-bottom: 200px;
+  -webkit-filter: invert(0.9);
+          filter: invert(0.9);
+}
+
+.hero-socials-logo {
+  margin: 20px;
+}
+
+footer {
+  background-color: grey;
+  text-align: center;
+  padding: 50px;
+  color: whitesmoke;
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.subsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+}
+
+.subsection h2 {
+  font-size: 2.5rem;
+}
+
+.subsection-alt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 50px;
+}
+
+.headshot-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+  margin: 10px;
+}
+
+.project-image {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a.hero-link:hover {
+  color: coral;
+}
+
+a.project-link {
+  color: coral;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+/*# sourceMappingURL=style.css.map */
